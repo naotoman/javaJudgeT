@@ -1,6 +1,8 @@
 package judge;
 
-public abstract Problem {
+import java.util.List;
 
-    Status judge(TestCase input, Answer ans);
+public interface Problem {
+
+    Status judge(List<List<String>> input, List<List<String>> answer);
 }
