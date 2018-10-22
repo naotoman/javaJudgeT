@@ -1,6 +1,5 @@
 package judge;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -8,9 +7,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-final class PathToList {
+final class InputMan {
 
-    List<List<String>> toList(Path path) {
+    List<List<String>> pathToList(Path path) {
         List<List<String>> input = new ArrayList<>();
         try {
             List<String> dec = Files.readAllLines(path);
